@@ -1,0 +1,66 @@
+{
+  "_comment": "SYNTHETIC sample only — fake names/values to show the payload shape for render.mjs. Do NOT paste real customer/MCP data into this file. Build each real report's payload fresh and pipe it via stdin (see SKILL.md).",
+  "metadata": { "domain_id": 0, "report_date": "2026-06-05" },
+  "executive_summary": {
+    "current_headcount": 29, "headcount_yoy_pct": -34.1,
+    "high_risk_count": 0, "high_risk_workforce_pct": 0.0,
+    "average_prodoscore": 54.8, "global_benchmark": 48.19
+  },
+  "high_risk_employees": [
+    {"rank_num":1,"employee":"Sample Employee A","role":"Business Analyst","prodoscore":66.0,"churn_probability":"39%"},
+    {"rank_num":2,"employee":"Sample Employee B","role":"Customer Support","prodoscore":54.0,"churn_probability":"27%"},
+    {"rank_num":3,"employee":"Sample Employee C","role":"Sales","prodoscore":56.0,"churn_probability":"24%"},
+    {"rank_num":4,"employee":"Sample Employee D","role":"Executive","prodoscore":54.0,"churn_probability":"20%"},
+    {"rank_num":5,"employee":"Sample Employee E","role":"Sales","prodoscore":53.0,"churn_probability":"20%"},
+    {"rank_num":6,"employee":"Sample Employee F","role":"Sales","prodoscore":60.0,"churn_probability":"19%"},
+    {"rank_num":7,"employee":"Sample Employee G","role":"Engineering","prodoscore":41.0,"churn_probability":"16%"},
+    {"rank_num":8,"employee":"Sample Employee H","role":"IT","prodoscore":31.0,"churn_probability":"16%"},
+    {"rank_num":9,"employee":"Sample Employee I","role":"Executive","prodoscore":69.0,"churn_probability":"15%"},
+    {"rank_num":10,"employee":"Sample Employee J","role":"Marketing","prodoscore":56.0,"churn_probability":"13%"}
+  ],
+  "role_turnover_breakdown": [
+    {"role_title":"Developer","net_addition":0,"turnover":9,"gap":-9,"analysis":"Critical Concern"},
+    {"role_title":"QA","net_addition":0,"turnover":4,"gap":-4,"analysis":"High Concern"},
+    {"role_title":"Development Operations","net_addition":0,"turnover":3,"gap":-3,"analysis":"High Concern"},
+    {"role_title":"Executive","net_addition":0,"turnover":2,"gap":-2,"analysis":"High Concern"},
+    {"role_title":"Business Development","net_addition":0,"turnover":1,"gap":-1,"analysis":"High Concern"},
+    {"role_title":"Administrator","net_addition":0,"turnover":0,"gap":0,"analysis":"Replacement Hiring"},
+    {"role_title":"Sales","net_addition":0,"turnover":0,"gap":0,"analysis":"Replacement Hiring"},
+    {"role_title":"Marketing","net_addition":0,"turnover":0,"gap":0,"analysis":"Replacement Hiring"},
+    {"role_title":"Engineering","net_addition":3,"turnover":1,"gap":2,"analysis":"Stable"}
+  ],
+  "behavioral_and_timing_metrics": [
+    {"Metric":"Active Time (hrs/day)","domain_90_day_avg":"255.1","high_risk_current":"300.1","not_at_risk_current":"289.8"},
+    {"Metric":"Gap Time (hrs/day)","domain_90_day_avg":"334.1","high_risk_current":"264.2","not_at_risk_current":"305.9"},
+    {"Metric":"Prodoscore","domain_90_day_avg":"53.5","high_risk_current":"61","not_at_risk_current":"59.2"},
+    {"Metric":"Start Time","domain_90_day_avg":"7:42 AM","high_risk_current":"6:14 AM","not_at_risk_current":"8:52 AM"},
+    {"Metric":"End Time","domain_90_day_avg":"6:40 PM","high_risk_current":"5:44 PM","not_at_risk_current":"6:46 PM"}
+  ],
+  "product_engagement_metrics": [
+    {"Metric":"Other (actions/day)","domain_90_day_avg":"62.8","high_risk_current":"87.8","not_at_risk_current":"91"},
+    {"Metric":"Messaging & SMS (actions/day)","domain_90_day_avg":"15.4","high_risk_current":"23.9","not_at_risk_current":"18.7"},
+    {"Metric":"Calendar & Meetings (mins/day)","domain_90_day_avg":"81","high_risk_current":"118","not_at_risk_current":"124"},
+    {"Metric":"Email (actions/day)","domain_90_day_avg":"4.5","high_risk_current":"10.2","not_at_risk_current":"4.7"}
+  ],
+  "meta": { "domainName": "Sample Domain", "coveragePeriod": "June 2026" },
+  "highRiskThreshold": 20,
+  "rolesLimit": 9,
+  "chartAxisLabel": "Daily Avg",
+  "narrative": {
+    "criticalAlert1": "Headcount has contracted sharply — down 34.1% year-over-year — with turnover concentrated in a handful of roles. The Developer function carries a critical net turnover gap of -9, the largest in the organization.",
+    "criticalAlert2": "Productivity is not the core problem: the average Prodoscore of 54.8 sits above the global benchmark of 48.19. Retention risk here is structural and role-specific rather than a company-wide engagement decline.",
+    "highRiskSubtitle": "Top 10 employees by churn probability — prioritize outreach here.",
+    "execActions": [
+      "Open retention conversations with the 5 employees above 20% churn risk this week, starting with the two highest-probability names.",
+      "Investigate the Developer function, which shed 9 people with no backfill (net gap -9).",
+      "Pair each flagged employee with a manager check-in and a documented retention plan within two weeks."
+    ],
+    "roleActions": [
+      "Launch an exit-interview review for the Developer role (-9 gap, 9 departures) to isolate root causes.",
+      "Close the QA (-4), Development Operations (-3) and Executive (-2) gaps before they compound.",
+      "Protect Engineering — the only role with net positive growth (+2) — and replicate what is working there."
+    ],
+    "page4Subtitle": "Spread across Sales, Support & Analyst roles",
+    "criticalConcern": "This is not a classic disengagement pattern. The high-risk segment is actually more active than peers — longer active time and markedly earlier start times — while headline Prodoscore stays near the domain average. That points to possible overload or burnout rather than checked-out behavior; pair workload review with retention outreach."
+  }
+}
